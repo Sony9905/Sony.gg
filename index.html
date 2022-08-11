@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            @font-face { font-family: NightinTokyo; src: url('NightinTokyo.TTF'); } 
+            * {
+               font-family: NightinTokyo !important;
+            }
+        </style>
+        <script>
+            let clock= () => {
+              let clockDiv = document.querySelector("#clock");
+              return setInterval(() => {
+                let date = new Date();
+                let tick = date.toLocaleTimeString();
+                clockDiv.textContent = tick;
+              }, 1000);
+            }
+        </script>
+    </head>
+    <body onload="clock()">
+        <div class="container">
+            <div class="glitch-container">
+                <h2 class="hero glitch layers" data-text="ソーニー・シング"><span>ソーニー・シング</span></h2>
+                <h2 id= "english" class="hero glitch layers" data-text="Sony Singh"><span>Sony Singh</span></h2>
+            </div>
+            <div class="clock" onclick="muteUnmute()">
+                <p id="clock"></p>
+            </div>
+                <iframe id="myVideo" width="460" height="295" src="https://www.youtube.com/embed/aQfznlgUk7w?autoplay=1&mute=1"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="icon-wrapper">
+                <a href="mailto:1sony9905@gmail.com">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/secure-mail.png"/>
+                </a>
+                <a href="https://www.twitch.tv/mynameisreallysony" target="_blank" rel="noopener noreferrer">
+                    <img src="https://img.icons8.com/ios-filled/50/1A1A1A/twitch.png"/>
+                </a>
+                <a href="https://www.youtube.com/channel/UClU5Q0PipcnLeFe-Hb2wbTQ" target="_blank" rel="noopener noreferrer">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/youtube-play.png"/>
+                </a>
+                <a href="https://na.op.gg/summoners/na/s%C3%B2ny" target="_blank" rel="noopener noreferrer">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/league-of-legends.png"/>
+                </a>
+            </div>
+        </div>
+        <footer>
+            <img src="sikh.png" id="sikh"/>
+            <p>Sony.gg</p>
+        </footer>
+    </body>
+</html>
