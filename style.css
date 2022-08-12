@@ -15,7 +15,7 @@ body {
     color: white;
 }
 .container {
-    height: 90vh;
+    height: 100vh;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -50,8 +50,8 @@ a > img {
 
 footer {
     display: flex;
-    margin-top: 20px;
-    margin-right: 50px;
+	width: 90%;
+    margin-top: 150px;
     justify-content: flex-end;
 	align-items: center;
 }
@@ -467,7 +467,7 @@ footer {
  img:hover{
 	transform: translate(0, -10px);
  }
- @media only screen and (max-width: 600px) {
+ @media only screen and (max-width: 768px) {
 	html {
 		min-height: 100%;
     	background-image: linear-gradient(to bottom, black, white);
@@ -475,6 +475,13 @@ footer {
 	}
 	* {
 		font-size: 16px;
+	}
+	footer {
+		margin-top: 10px;
+	}
+	img {
+		width: 24px;
+		height: 24px;
 	}
 	#clock {
 		font-size: 32px;
@@ -484,9 +491,9 @@ footer {
 		margin-top: 15%;
 	}
 	.glitch-container{
-		margin: 0;
+		margin: 10px 0;
 		justify-content: center;
-		margin-bottom: 35px;
+		padding: 0 10px;
 	}
 	.glitch span {
 		writing-mode: horizontal-tb;
